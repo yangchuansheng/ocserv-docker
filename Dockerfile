@@ -33,7 +33,7 @@ RUN mkdir -p /temp && cd /temp \
 RUN mkdir -p /temp && cd /temp \
     && wget https://github.com/lz4/lz4/archive/v1.7.4.tar.gz \
     && tar xvf v1.7.4.tar.gz \
-    && cd lz4-v1.7.4 \
+    && cd lz4-1.7.4 \
     && make install \
     && ln -sf /usr/local/lib/liblz4.* /usr/lib/ \
     && cd / && rm -rf /temp
