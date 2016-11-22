@@ -31,8 +31,6 @@ RUN mkdir -p /temp && cd /temp \
 
 # configuration lz4
 RUN mkdir -p /temp && cd /temp \
-    && wget https://github.com/Cyan4973/lz4/releases/latest -O lz4.html \
-    && export lz4_version=$(cat lz4.html | grep -m 1 -o 'r[0-9][0-9][0-9]') \
     && wget https://github.com/lz4/lz4/archive/1.7.4.tar.gz \
     && tar xvf 1.7.4.tar.gz \
     && cd lz4-1.7.4 \
