@@ -33,7 +33,7 @@ RUN mkdir -p /temp && cd /temp \
 RUN mkdir -p /temp && cd /temp \
     && wget https://github.com/Cyan4973/lz4/releases/latest -O lz4.html \
     && export lz4_version=$(cat lz4.html | grep -m 1 -o 'r[0-9][0-9][0-9]') \
-    && wget https://github.com/Cyan4973/lz4/archive/$lz4_version.tar.gz \
+    && wget https://github.com/Cyan4973/lz4/archive/1.7.4.tar.gz \
     && tar xvf $lz4_version.tar.gz \
     && cd lz4-$lz4_version \
     && make install \
